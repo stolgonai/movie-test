@@ -6,6 +6,8 @@
     font-family: 'Source Sans Pro', sans-serif;
     background-color: #1a191f;
     color: white;
+    cursor: pointer;
+
   }
   
   button {
@@ -41,25 +43,143 @@
     padding: 0 40px;
     height: 100%;
   }
-  
-  header {
-    height: 80px;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
-    position: fixed;
-    z-index: 99;
-    top: 0;
-    width: 100%;
-    background: #1a191f;
+/*START MAIN HEADER Sholpan*/ 
+
+
+header {
+  margin-left: 4%;
+  margin-right: 4%;
+  position: fixed;
+  width: 95%; 
+  top: 0;
+  background-color: #1B191F; /* Dark Grey */
+  z-index: 101;
+}
+
+.topnav {
+  background-color: #1B191F; /* Dark Grey */
+  height: 70px;
+  font-size: 14px;
+  font-weight:normal;
+  letter-spacing: 1px;
+  margin: auto;
+}
+
+.topnav a {
+  float: left;
+  color: #BAB9BB; /* Light Grey */
+  text-decoration: none;
+  padding: 14px 16px;
+}
+
+.topnav-right {
+  float: right;
+  margin: -1.3%;
+  padding-left: 90px;
+
+}
+
+.search {
+  background-color: #232129; /* Grey */
+  font-weight: normal;
+  font-size: 15px;
+  border-radius: 6px; 
+  width: 240px;
+  height: 40px;
+  border: 1px solid transparent;
+  font-size: 16px;
+  padding: 0 50px 0 20px;
+  position: relative;
+} 
+
+.fa-search {
+  position: absolute;
+  top: 25px;
+  left: 74%;
+
+}
+
+.search:hover {
+  border: 1px solid #FED80E; /* Yellow */
+}
+
+.languages {
+  background-color: transparent;
+  color: #BAB9BB; /* Light Grey */
+  height: 70px;
+  border: none;
+  padding-left: 35px;
   }
+
+.languages:hover {
+  color: #FED80E; /* Yellow */
+}
+
+.signin {
+  background-color: transparent;
+  color: #BAB9BB; /* Light Grey */
+  border-radius: 8px;
+  border: 1px solid #FED80E; /* Yellow */
+  padding: 10px 32px;  
+}
+
+.signin:hover {
+  color: #FED80E; /* Yellow */
+}
+
+
+.topnav .hotflix {
+  font-size: 27px;
+  font-weight: 610;
+  color: white;
+}
+a:hover {
+  color: #FED80E; /* Yellow */
+}
+
+
+.topnav .home {
+  padding: 25px;
+  margin-left: 4%;
+}
+
+.topnav .catalog {
+  padding: 25px;
+  padding-left: 10px;
+}
+
+.topnav .pricingplan {
+  padding: 25px;
+  padding-left: 10px;
+}
+
+.topnav .help {
+  padding: 25px;
+  padding-left: 10px;
+}
+
+.topnav .icon {
+  padding: 10px;
+  font-size: 19px;
+  padding-left: 1px;
+}
+
+select {
+  -webkit-appearance: none;   
+}
+
+
+/*END MAIN HEADER Sholpan*/ 
   
-  header .content {
+  /*header .content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
+  }*/
   
   main {
     margin-top: 80px;
+    z-index: 5;
   }
   
   .menu {
