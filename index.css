@@ -99,8 +99,17 @@
       align-items: center;
       margin-right: 15px;
   }
+.bi-arrow-left, .bi-arrow-right {
+  /* background: url('https://api.iconify.design/bi:arrow-left.svg') no-repeat center center / contain; */
+  width: 30px;
+  height: 30px;
+  margin-left: 15px; 
+  color:#BAB9BB;
 
-  
+}
+.bi-arrow-left:hover, .bi-arrow-right:hover {
+  color: white;
+}
 
   .slider-list {
     display: grid;
