@@ -7,7 +7,8 @@
     background-color: #1a191f;
     color: white;
     cursor: pointer;
-
+    padding-left: 
+    
   }
   
   button {
@@ -37,46 +38,69 @@
   }
   
   .content {
-    max-width: 1320px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 40px;
     height: 100%;
   }
+
+  .content-wrap {
+    /* justify-content: space-between; */
+    display: flex;
+    align-items: center;
+    padding: 0px 90px;
+    
+  }
 /*START MAIN HEADER Sholpan*/ 
 
 
 header {
-  margin-left: 4%;
-  margin-right: 4%;
-  position: fixed;
-  width: 95%; 
-  top: 0;
+  width: 100%;  
+  top: 0; 
   background-color: #1B191F; /* Dark Grey */
-  z-index: 101;
+  z-index: 101; 
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 40px;
+  height: 80px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
 }
 
+header.content-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .topnav {
   background-color: #1B191F; /* Dark Grey */
   height: 70px;
   font-size: 14px;
   font-weight:normal;
   letter-spacing: 1px;
-  margin: auto;
+  display: flex;
+  align-items: center;
+  color: #BAB9BB; /* Light Grey */
+  text-decoration: none;
+  width: 400px;
+  justify-content: space-between;
+  margin-right: 180px;
+
 }
 
 .topnav a {
-  float: left;
-  color: #BAB9BB; /* Light Grey */
-  text-decoration: none;
-  padding: 14px 16px;
+  margin-right: 10px;
 }
 
-.topnav-right {
-  float: right;
-  margin: -1.3%;
-  padding-left: 90px;
 
+.topnav-right {
+  /* float: right; */
+  /* display: flex;
+  justify-content: flex-end; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .search {
@@ -96,6 +120,8 @@ header {
   position: absolute;
   top: 25px;
   left: 74%;
+  color: #6f6f70; /* Dark Grey */
+  
 
 }
 
@@ -120,7 +146,8 @@ header {
   color: #BAB9BB; /* Light Grey */
   border-radius: 8px;
   border: 1px solid #FED80E; /* Yellow */
-  padding: 10px 32px;  
+  width: 120px;
+  height: 40px;
 }
 
 .signin:hover {
@@ -128,45 +155,29 @@ header {
 }
 
 
-.topnav .hotflix {
+.hotflix {
   font-size: 27px;
   font-weight: 610;
   color: white;
+  display: inline;
+  padding-right: 40px;
 }
+
 a:hover {
   color: #FED80E; /* Yellow */
 }
 
 
-.topnav .home {
-  padding: 25px;
-  margin-left: 4%;
-}
-
-.topnav .catalog {
-  padding: 25px;
-  padding-left: 10px;
-}
-
-.topnav .pricingplan {
-  padding: 25px;
-  padding-left: 10px;
-}
-
-.topnav .help {
-  padding: 25px;
-  padding-left: 10px;
-}
-
 .topnav .icon {
-  padding: 10px;
   font-size: 19px;
-  padding-left: 1px;
+  margin-bottom: 10px;
 }
+
 
 select {
   -webkit-appearance: none;   
 }
+
 
 
 /*END MAIN HEADER Sholpan*/ 
@@ -458,3 +469,39 @@ i.fa-arrow-up {
     color:  rgba(255,255,255,0.3);
     
 }
+
+/* phone */
+@media only screen and (min-width: 320px)
+ {
+  .content, header {
+    padding: 0 20px ;
+} 
+/* .slider-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 5px;
+}
+
+.content-wrap, header, main, .topnav, .topnav-right,.content-tittle-nav,
+  .btn-slider {
+    display: block;
+  } */ */
+}
+
+/* screen */
+@media only screen and (max-width: 1200px)
+{
+  .content, header {
+    padding: 0 30px ;
+} 
+}
+/* tablet */
+@media only screen and (min-width: 768px)
+{
+  .content, header {
+    padding: 0 0 30px;
+} 
+ /* {
+  display: block;
+} */
+
